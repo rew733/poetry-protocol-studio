@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry Protocol Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#d97706">
+</head>
+<body>
+    <header>
+        <h1>مختبر القصيدة والتشريح النصي</h1>
+        <p>Poetry Protocol Studio • أدوات الفحص الهيكلي وبروتوكولات الكثافة</p>
+    </header>
+
+    <div class="container">
+        <div class="panel">
+            <textarea id="poem-input" placeholder="اكتب أو ألصق نصك الشعري هنا لاختبار البروتوكولات..."></textarea>
+            <div class="toolbar">
+                <button id="analyze-btn">تشغيل بروتوكولات الفحص</button>
+                <button id="clear-btn" class="secondary">مسح النص</button>
+            </div>
+        </div>
+
+        <div class="results-grid">
+            <div class="result-card">
+                <h3>مقصلة الكثافة</h3>
+                <p id="density-result">في انتظار إدخال النص...</p>
+            </div>
+            <div class="result-card">
+                <h3>تنوع الحقول الدلالية</h3>
+                <p id="semantic-result">في انتظار إدخال النص...</p>
+            </div>
+            <div class="result-card">
+                <h3>التشظي التركيبي والاستهلال</h3>
+                <p id="syntax-result">في انتظار إدخال النص...</p>
+            </div>
+            <div class="result-card">
+                <h3>هندسة المسافة والتحليق</h3>
+                <p id="distance-result">في انتظار إدخال النص...</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Offline-First PWA • Structural Poetics Engine
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
